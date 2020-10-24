@@ -17,7 +17,7 @@ while True:
     #detect cars in the video
     cars = car_cascade.detectMultiScale(gray, 1.1, 3)
 
-    #to draw arectangle in each cars 
+    #to draw a rectangle in each cars 
     for (x,y,w,h) in cars:
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)      
 
